@@ -37,6 +37,8 @@
           <div class="form-group">
             <!-- notice the v-model here...use this as a MODEL for the other input elements...haha -->
             <input class="form-control" placeholder="Event Name" v-model="event.name">
+            <input class="form-control" placeholder="Event Date" v-model="event.date">
+            <input class="form-control" placeholder="Event Description" v-model="event.description">
           </div>
 
           <div class="form-group">
@@ -52,7 +54,7 @@
           </div>
           <!-- TODO -->
           <!-- add v-on:click here -->
-          <button class="btn btn-primary">Submit</button>
+          <button class="btn btn-primary" v-on:click="addEvent">Submit</button>
 
         </div>
       </div>
@@ -92,6 +94,11 @@
   </div>
 
   <!-- Add scripts here -->
-
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>
